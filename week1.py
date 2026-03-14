@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Load raw data
+
 customers = pd.read_csv("raw/olist_customers_dataset.csv")
 geolocation = pd.read_csv("raw/olist_geolocation_dataset.csv")
 items = pd.read_csv("raw/olist_order_items_dataset.csv")
@@ -11,7 +11,7 @@ products = pd.read_csv("raw/olist_products_dataset.csv")
 sellers = pd.read_csv("raw/olist_sellers_dataset.csv")
 translations = pd.read_csv("raw/product_category_name_translation.csv")
 
-# Create datasets dictionary
+
 datasets = {
     "Customers": customers,
     "Geolocation": geolocation,
@@ -86,4 +86,4 @@ translations.to_csv("cleaned/cleaned_translations.csv", index=False)
 print(orders.isnull().sum())
 
 
-print("\n✅ Week 1 Complete! All cleaned files saved!")
+print(" Week 1 Complete! All cleaned files saved!")
