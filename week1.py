@@ -11,7 +11,10 @@ products = pd.read_csv("raw/olist_products_dataset.csv")
 sellers = pd.read_csv("raw/olist_sellers_dataset.csv")
 translations = pd.read_csv("raw/product_category_name_translation.csv")
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1cfd06166f6d1ae5ca89d769bc70f0360b920ce1
 datasets = {
     "Customers": customers,
     "Geolocation": geolocation,
@@ -86,4 +89,8 @@ translations.to_csv("cleaned/cleaned_translations.csv", index=False)
 print(orders.isnull().sum())
 
 
+<<<<<<< HEAD
 print(" Week 1 Complete! All cleaned files saved!")
+=======
+print("\n Week 1 Complete! All cleaned files saved!")
+>>>>>>> 1cfd06166f6d1ae5ca89d769bc70f0360b920ce1
